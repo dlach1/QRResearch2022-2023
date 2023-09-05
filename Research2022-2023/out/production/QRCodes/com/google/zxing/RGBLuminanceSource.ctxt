@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=RGBLuminanceSource
+comment0.text=\r\n\ This\ class\ is\ used\ to\ help\ decode\ images\ from\ files\ which\ arrive\ as\ RGB\ data\ from\r\n\ an\ ARGB\ pixel\ array.\ It\ does\ not\ support\ rotation.\r\n\r\n\ @author\ dswitkin@google.com\ (Daniel\ Switkin)\r\n\ @author\ Betaminos\r\n
+comment1.params=width\ height\ pixels
+comment1.target=RGBLuminanceSource(int,\ int,\ int[])
+comment2.params=pixels\ dataWidth\ dataHeight\ left\ top\ width\ height
+comment2.target=RGBLuminanceSource(byte[],\ int,\ int,\ int,\ int,\ int,\ int)
+comment3.params=y\ row
+comment3.target=byte[]\ getRow(int,\ byte[])
+comment4.params=
+comment4.target=byte[]\ getMatrix()
+comment5.params=
+comment5.target=boolean\ isCropSupported()
+comment6.params=left\ top\ width\ height
+comment6.target=LuminanceSource\ crop(int,\ int,\ int,\ int)
+numComments=7

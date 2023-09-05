@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=QRCodeWriter
+comment0.text=\r\n\ This\ object\ renders\ a\ QR\ Code\ as\ a\ BitMatrix\ 2D\ array\ of\ greyscale\ values.\r\n\r\n\ @author\ dswitkin@google.com\ (Daniel\ Switkin)\r\n
+comment1.params=contents\ format\ width\ height
+comment1.target=com.google.zxing.common.BitMatrix\ encode(java.lang.String,\ com.google.zxing.BarcodeFormat,\ int,\ int)
+comment2.params=contents\ format\ width\ height\ hints\ secretMess
+comment2.target=com.google.zxing.common.BitMatrix\ encode(java.lang.String,\ com.google.zxing.BarcodeFormat,\ int,\ int,\ java.util.Map,\ java.lang.String)
+comment3.params=contents\ format\ width\ height\ hints
+comment3.target=com.google.zxing.common.BitMatrix\ encode(java.lang.String,\ com.google.zxing.BarcodeFormat,\ int,\ int,\ java.util.Map)
+comment4.params=code\ width\ height\ quietZone
+comment4.target=com.google.zxing.common.BitMatrix\ renderResult(encoder.QRCode,\ int,\ int,\ int)
+numComments=5

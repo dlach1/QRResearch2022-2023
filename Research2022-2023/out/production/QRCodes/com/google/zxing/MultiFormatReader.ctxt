@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=MultiFormatReader
+comment0.text=\r\n\ MultiFormatReader\ is\ a\ convenience\ class\ and\ the\ main\ entry\ point\ into\ the\ library\ for\ most\ uses.\r\n\ By\ default\ it\ attempts\ to\ decode\ all\ barcode\ formats\ that\ the\ library\ supports.\ Optionally,\ you\r\n\ can\ provide\ a\ hints\ object\ to\ request\ different\ behavior,\ for\ example\ only\ decoding\ QR\ codes.\r\n\r\n\ @author\ Sean\ Owen\r\n\ @author\ dswitkin@google.com\ (Daniel\ Switkin)\r\n
+comment1.params=image
+comment1.target=Result\ decode(BinaryBitmap)
+comment1.text=\r\n\ This\ version\ of\ decode\ honors\ the\ intent\ of\ Reader.decode(BinaryBitmap)\ in\ that\ it\r\n\ passes\ null\ as\ a\ hint\ to\ the\ decoders.\ However,\ that\ makes\ it\ inefficient\ to\ call\ repeatedly.\r\n\ Use\ setHints()\ followed\ by\ decodeWithState()\ for\ continuous\ scan\ applications.\r\n\r\n\ @param\ image\ The\ pixel\ data\ to\ decode\r\n\ @return\ The\ contents\ of\ the\ image\r\n\ @throws\ NotFoundException\ Any\ errors\ which\ occurred\r\n
+comment2.params=image\ hints
+comment2.target=Result\ decode(BinaryBitmap,\ java.util.Map)
+comment2.text=\r\n\ Decode\ an\ image\ using\ the\ hints\ provided.\ Does\ not\ honor\ existing\ state.\r\n\r\n\ @param\ image\ The\ pixel\ data\ to\ decode\r\n\ @param\ hints\ The\ hints\ to\ use,\ clearing\ the\ previous\ state.\r\n\ @return\ The\ contents\ of\ the\ image\r\n\ @throws\ NotFoundException\ Any\ errors\ which\ occurred\r\n
+comment3.params=image
+comment3.target=Result\ decodeWithState(BinaryBitmap)
+comment3.text=\r\n\ Decode\ an\ image\ using\ the\ state\ set\ up\ by\ calling\ setHints()\ previously.\ Continuous\ scan\r\n\ clients\ will\ get\ a\ <b>large</b>\ speed\ increase\ by\ using\ this\ instead\ of\ decode().\r\n\r\n\ @param\ image\ The\ pixel\ data\ to\ decode\r\n\ @return\ The\ contents\ of\ the\ image\r\n\ @throws\ NotFoundException\ Any\ errors\ which\ occurred\r\n
+comment4.params=hints
+comment4.target=void\ setHints(java.util.Map)
+comment4.text=\r\n\ This\ method\ adds\ state\ to\ the\ MultiFormatReader.\ By\ setting\ the\ hints\ once,\ subsequent\ calls\r\n\ to\ decodeWithState(image)\ can\ reuse\ the\ same\ set\ of\ readers\ without\ reallocating\ memory.\ This\r\n\ is\ important\ for\ performance\ in\ continuous\ scan\ clients.\r\n\r\n\ @param\ hints\ The\ set\ of\ hints\ to\ use\ for\ subsequent\ calls\ to\ decode(image)\r\n
+comment5.params=
+comment5.target=void\ reset()
+comment6.params=image
+comment6.target=Result\ decodeInternal(BinaryBitmap)
+numComments=7

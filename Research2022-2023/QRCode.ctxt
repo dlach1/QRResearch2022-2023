@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=QRCode
+comment1.params=qrCodeimage
+comment1.target=java.lang.String\ decodeQRCode(java.io.File)
+comment2.params=arr\ messLength
+comment2.target=byte[]\ extractMessage(java.lang.String[][],\ int)
+comment3.params=letters
+comment3.target=java.lang.String\ BinarytoString(java.lang.String)
+comment4.params=matrix\ array\ scale
+comment4.target=java.lang.String[][]\ condenseArr(com.google.zxing.common.BitMatrix,\ java.lang.String[][],\ int)
+comment5.params=qrCodeimage
+comment5.target=com.google.zxing.common.BitMatrix\ getmatrix(java.io.File)
+comment6.params=condensedArr1
+comment6.target=java.lang.String\ condensedArrToString(java.lang.String[][])
+comment7.params=qrCodeimage
+comment7.target=void\ getSecretMessage(java.io.File)
+comment8.params=decodedText\ compare
+comment8.target=int\ howSimilar(java.lang.String,\ java.lang.String[][])
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10

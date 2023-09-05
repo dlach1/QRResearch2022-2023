@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=HiddenQR
+comment1.params=input
+comment1.target=java.lang.String\ convertStringToBinary(java.lang.String)
+comment2.params=binary\ blockSize\ separator
+comment2.target=java.lang.String\ prettyBinary(java.lang.String,\ int,\ java.lang.String)
+comment3.params=letters
+comment3.target=java.lang.String\ BinarytoString(java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

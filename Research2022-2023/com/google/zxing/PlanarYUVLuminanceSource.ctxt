@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=PlanarYUVLuminanceSource
+comment0.text=\r\n\ This\ object\ extends\ LuminanceSource\ around\ an\ array\ of\ YUV\ data\ returned\ from\ the\ camera\ driver,\r\n\ with\ the\ option\ to\ crop\ to\ a\ rectangle\ within\ the\ full\ data.\ This\ can\ be\ used\ to\ exclude\r\n\ superfluous\ pixels\ around\ the\ perimeter\ and\ speed\ up\ decoding.\r\n\r\n\ It\ works\ for\ any\ pixel\ format\ where\ the\ Y\ channel\ is\ planar\ and\ appears\ first,\ including\r\n\ YCbCr_420_SP\ and\ YCbCr_422_SP.\r\n\r\n\ @author\ dswitkin@google.com\ (Daniel\ Switkin)\r\n
+comment1.params=yuvData\ dataWidth\ dataHeight\ left\ top\ width\ height\ reverseHorizontal
+comment1.target=PlanarYUVLuminanceSource(byte[],\ int,\ int,\ int,\ int,\ int,\ int,\ boolean)
+comment2.params=y\ row
+comment2.target=byte[]\ getRow(int,\ byte[])
+comment3.params=
+comment3.target=byte[]\ getMatrix()
+comment4.params=
+comment4.target=boolean\ isCropSupported()
+comment5.params=left\ top\ width\ height
+comment5.target=LuminanceSource\ crop(int,\ int,\ int,\ int)
+comment6.params=
+comment6.target=int[]\ renderThumbnail()
+comment7.params=
+comment7.target=int\ getThumbnailWidth()
+comment7.text=\r\n\ @return\ width\ of\ image\ from\ {@link\ \#renderThumbnail()}\r\n
+comment8.params=
+comment8.target=int\ getThumbnailHeight()
+comment8.text=\r\n\ @return\ height\ of\ image\ from\ {@link\ \#renderThumbnail()}\r\n
+comment9.params=width\ height
+comment9.target=void\ reverseHorizontal(int,\ int)
+numComments=10

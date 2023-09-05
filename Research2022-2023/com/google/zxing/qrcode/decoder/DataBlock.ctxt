@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DataBlock
+comment0.text=\r\n\ <p>Encapsulates\ a\ block\ of\ data\ within\ a\ QR\ Code.\ QR\ Codes\ may\ split\ their\ data\ into\r\n\ multiple\ blocks,\ each\ of\ which\ is\ a\ unit\ of\ data\ and\ error-correction\ codewords.\ Each\r\n\ is\ represented\ by\ an\ instance\ of\ this\ class.</p>\r\n\r\n\ @author\ Sean\ Owen\r\n
+comment1.params=numDataCodewords\ codewords
+comment1.target=DataBlock(int,\ byte[])
+comment2.params=rawCodewords\ version\ ecLevel
+comment2.target=DataBlock[]\ getDataBlocks(byte[],\ Version,\ ErrorCorrectionLevel)
+comment2.text=\r\n\ <p>When\ QR\ Codes\ use\ multiple\ data\ blocks,\ they\ are\ actually\ interleaved.\r\n\ That\ is,\ the\ first\ byte\ of\ data\ block\ 1\ to\ n\ is\ written,\ then\ the\ second\ bytes,\ and\ so\ on.\ This\r\n\ method\ will\ separate\ the\ data\ into\ original\ blocks.</p>\r\n\r\n\ @param\ rawCodewords\ bytes\ as\ read\ directly\ from\ the\ QR\ Code\r\n\ @param\ version\ version\ of\ the\ QR\ Code\r\n\ @param\ ecLevel\ error-correction\ level\ of\ the\ QR\ Code\r\n\ @return\ DataBlocks\ containing\ original\ bytes,\ "de-interleaved"\ from\ representation\ in\ the\r\n\ \ \ \ \ \ \ \ \ QR\ Code\r\n
+comment3.params=
+comment3.target=int\ getNumDataCodewords()
+comment4.params=
+comment4.target=byte[]\ getCodewords()
+numComments=5

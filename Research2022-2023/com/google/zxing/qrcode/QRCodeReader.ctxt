@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=QRCodeReader
+comment0.text=\r\n\ This\ implementation\ can\ detect\ and\ decode\ QR\ Codes\ in\ an\ image.\r\n\r\n\ @author\ Sean\ Owen\r\n
+comment1.params=
+comment1.target=decoder.Decoder\ getDecoder()
+comment2.params=image
+comment2.target=com.google.zxing.Result\ decode(com.google.zxing.BinaryBitmap)
+comment2.text=\r\n\ Locates\ and\ decodes\ a\ QR\ code\ in\ an\ image.\r\n\r\n\ @return\ a\ String\ representing\ the\ content\ encoded\ by\ the\ QR\ code\r\n\ @throws\ NotFoundException\ if\ a\ QR\ code\ cannot\ be\ found\r\n\ @throws\ FormatException\ if\ a\ QR\ code\ cannot\ be\ decoded\r\n\ @throws\ ChecksumException\ if\ error\ correction\ fails\r\n
+comment3.params=image\ hints
+comment3.target=com.google.zxing.Result\ decode(com.google.zxing.BinaryBitmap,\ java.util.Map)
+comment4.params=
+comment4.target=void\ reset()
+comment5.params=image
+comment5.target=com.google.zxing.common.BitMatrix\ extractPureBits(com.google.zxing.common.BitMatrix)
+comment5.text=\r\n\ This\ method\ detects\ a\ code\ in\ a\ "pure"\ image\ --\ that\ is,\ pure\ monochrome\ image\r\n\ which\ contains\ only\ an\ unrotated,\ unskewed,\ image\ of\ a\ code,\ with\ some\ white\ border\r\n\ around\ it.\ This\ is\ a\ specialized\ method\ that\ works\ exceptionally\ fast\ in\ this\ special\r\n\ case.\r\n
+comment6.params=leftTopBlack\ image
+comment6.target=float\ moduleSize(int[],\ com.google.zxing.common.BitMatrix)
+numComments=7

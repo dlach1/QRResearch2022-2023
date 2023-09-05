@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=BitMatrixParser
+comment0.text=\r\n\ @author\ Sean\ Owen\r\n
+comment1.params=bitMatrix
+comment1.target=BitMatrixParser(com.google.zxing.common.BitMatrix)
+comment1.text=\r\n\ @param\ bitMatrix\ {@link\ BitMatrix}\ to\ parse\r\n\ @throws\ FormatException\ if\ dimension\ is\ not\ >\=\ 21\ and\ 1\ mod\ 4\r\n
+comment2.params=
+comment2.target=FormatInformation\ readFormatInformation()
+comment2.text=\r\n\ <p>Reads\ format\ information\ from\ one\ of\ its\ two\ locations\ within\ the\ QR\ Code.</p>\r\n\r\n\ @return\ {@link\ FormatInformation}\ encapsulating\ the\ QR\ Code's\ format\ info\r\n\ @throws\ FormatException\ if\ both\ format\ information\ locations\ cannot\ be\ parsed\ as\r\n\ the\ valid\ encoding\ of\ format\ information\r\n
+comment3.params=
+comment3.target=Version\ readVersion()
+comment3.text=\r\n\ <p>Reads\ version\ information\ from\ one\ of\ its\ two\ locations\ within\ the\ QR\ Code.</p>\r\n\r\n\ @return\ {@link\ Version}\ encapsulating\ the\ QR\ Code's\ version\r\n\ @throws\ FormatException\ if\ both\ version\ information\ locations\ cannot\ be\ parsed\ as\r\n\ the\ valid\ encoding\ of\ version\ information\r\n
+comment4.params=i\ j\ versionBits
+comment4.target=int\ copyBit(int,\ int,\ int)
+comment5.params=
+comment5.target=byte[]\ readCodewords()
+comment5.text=\r\n\ <p>Reads\ the\ bits\ in\ the\ {@link\ BitMatrix}\ representing\ the\ finder\ pattern\ in\ the\r\n\ correct\ order\ in\ order\ to\ reconstruct\ the\ codewords\ bytes\ contained\ within\ the\r\n\ QR\ Code.</p>\r\n\r\n\ @return\ bytes\ encoded\ within\ the\ QR\ Code\r\n\ @throws\ FormatException\ if\ the\ exact\ number\ of\ bytes\ expected\ is\ not\ read\r\n
+comment6.params=
+comment6.target=void\ remask()
+comment6.text=\r\n\ Revert\ the\ mask\ removal\ done\ while\ reading\ the\ code\ words.\ The\ bit\ matrix\ should\ revert\ to\ its\ original\ state.\r\n
+comment7.params=mirror
+comment7.target=void\ setMirror(boolean)
+comment7.text=\r\n\ Prepare\ the\ parser\ for\ a\ mirrored\ operation.\r\n\ This\ flag\ has\ effect\ only\ on\ the\ {@link\ \#readFormatInformation()}\ and\ the\r\n\ {@link\ \#readVersion()}.\ Before\ proceeding\ with\ {@link\ \#readCodewords()}\ the\r\n\ {@link\ \#mirror()}\ method\ should\ be\ called.\r\n\r\n\ @param\ mirror\ Whether\ to\ read\ version\ and\ format\ information\ mirrored.\r\n
+comment8.params=
+comment8.target=void\ mirror()
+comment8.text=Mirror\ the\ bit\ matrix\ in\ order\ to\ attempt\ a\ second\ reading.
+numComments=9

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MultiFormatWriter
+comment0.text=\r\n\ This\ is\ a\ factory\ class\ which\ finds\ the\ appropriate\ Writer\ subclass\ for\ the\ BarcodeFormat\r\n\ requested\ and\ encodes\ the\ barcode\ with\ the\ supplied\ contents.\r\n\r\n\ @author\ dswitkin@google.com\ (Daniel\ Switkin)\r\n
+comment1.params=contents\ format\ width\ height
+comment1.target=common.BitMatrix\ encode(java.lang.String,\ BarcodeFormat,\ int,\ int)
+comment2.params=contents\ format\ width\ height\ hints\ secretMess
+comment2.target=common.BitMatrix\ encode(java.lang.String,\ BarcodeFormat,\ int,\ int,\ java.util.Map,\ java.lang.String)
+comment3.params=contents\ format\ width\ height\ hints
+comment3.target=common.BitMatrix\ encode(java.lang.String,\ BarcodeFormat,\ int,\ int,\ java.util.Map)
+numComments=4

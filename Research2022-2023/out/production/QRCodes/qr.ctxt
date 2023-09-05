@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=qr
+comment1.params=data\ path\ charset\ hashMap\ height\ width
+comment1.target=void\ createQR(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.Map,\ int,\ int)
+comment2.params=secretMessage\ data\ path\ charset\ hashMap\ height\ width
+comment2.target=void\ embedInformation(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.Map,\ int,\ int)
+comment3.params=input
+comment3.target=java.lang.String\ convertStringToBinary(java.lang.String)
+comment4.params=dataStr\ secret\ filename
+comment4.target=void\ getTamperedQR(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment5.params=dataStr
+comment5.target=void\ getNoErrors(java.lang.String)
+comment6.params=dataStr
+comment6.target=java.lang.String\ returnCode(java.lang.String)
+numComments=7

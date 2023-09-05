@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Writer
+comment0.text=\r\n\ The\ base\ class\ for\ all\ objects\ which\ encode/generate\ a\ barcode\ image.\r\n\r\n\ @author\ dswitkin@google.com\ (Daniel\ Switkin)\r\n
+comment1.params=contents\ format\ width\ height
+comment1.target=common.BitMatrix\ encode(java.lang.String,\ BarcodeFormat,\ int,\ int)
+comment1.text=\r\n\ Encode\ a\ barcode\ using\ the\ default\ settings.\r\n\r\n\ @param\ contents\ The\ contents\ to\ encode\ in\ the\ barcode\r\n\ @param\ format\ The\ barcode\ format\ to\ generate\r\n\ @param\ width\ The\ preferred\ width\ in\ pixels\r\n\ @param\ height\ The\ preferred\ height\ in\ pixels\r\n\ @return\ {@link\ BitMatrix}\ representing\ encoded\ barcode\ image\r\n\ @throws\ WriterException\ if\ contents\ cannot\ be\ encoded\ legally\ in\ a\ format\r\n
+comment2.params=contents\ format\ width\ height\ hints
+comment2.target=common.BitMatrix\ encode(java.lang.String,\ BarcodeFormat,\ int,\ int,\ java.util.Map)
+comment2.text=\r\n\ @param\ contents\ The\ contents\ to\ encode\ in\ the\ barcode\r\n\ @param\ format\ The\ barcode\ format\ to\ generate\r\n\ @param\ width\ The\ preferred\ width\ in\ pixels\r\n\ @param\ height\ The\ preferred\ height\ in\ pixels\r\n\ @param\ hints\ Additional\ parameters\ to\ supply\ to\ the\ encoder\r\n\ @return\ {@link\ BitMatrix}\ representing\ encoded\ barcode\ image\r\n\ @throws\ WriterException\ if\ contents\ cannot\ be\ encoded\ legally\ in\ a\ format\r\n
+comment3.params=contents\ format\ width\ height\ hints\ secretMess
+comment3.target=common.BitMatrix\ encode(java.lang.String,\ BarcodeFormat,\ int,\ int,\ java.util.Map,\ java.lang.String)
+numComments=4
