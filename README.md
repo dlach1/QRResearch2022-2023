@@ -2,7 +2,7 @@
 
 The code from my research paper that I created in order to discover the effectiveness of secret data sharing in QR codes.
 
-I conducted this research at the University of Connecticut under the mentorshop of Mr. Greg Johnson in the VoTer Center. The published paper can be found [here]().
+I conducted this research at the University of Connecticut under the mentorshop of Mr. Greg Johnson in the VoTer Center. The published paper can be found [here](https://github.com/dlach1/QRResearch2022-2023/blob/main/Dan%20LaChance%20Research%20Article%202023.pdf).
 
 In creating and testing my implementation I used the BlueJ IDE and the base QR Code reader Zebra Crossing which can be found here: [ZXING](https://zxing.github.io/zxing/apidocs/).
 
